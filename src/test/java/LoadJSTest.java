@@ -26,4 +26,14 @@ public class LoadJSTest {
         engine.eval(new FileReader("src/main/resources/square.js"));
         assertThat(invocable.invokeFunction("sq", 4), equalTo(16.0));
     }
+
+    @Test
+    public void shouldLoadJasmine() throws Exception {
+        engine.eval("var window = {};");//Replace with nashorn-boot.js?
+        engine.eval(new FileReader("src/test/javascript/lib/jasmine-2.0.3/jasmine.js"));
+        //engine.eval(new FileReader("src/test/javascript/lib/jasmine-2.0.3/jasmine-html.js"));
+        //engine.eval(new FileReader("src/test/javascript/lib/jasmine-2.0.3/boot.js"));
+        engine.eval(new FileReader("src/main/resources/square.js"));
+        assertThat(invocable.invokeFunction("sq", 4), equalTo(16.0));
+    }
 }
