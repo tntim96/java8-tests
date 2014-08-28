@@ -10,7 +10,7 @@ describe('JS Tests', function() {
             expect(sq(2)).toEqual(4);
         });
         it("should detect failed tests", function() {
-            expect(sq(10)).toEqual(101);
+            expect(sq(10)).toEqual(100);
         });
     });
 });
