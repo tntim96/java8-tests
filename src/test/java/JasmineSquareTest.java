@@ -4,8 +4,10 @@ import de.helwich.junit.JasmineTest;
 
 @RunWith(JasmineTestRunner.class)
 @JasmineTest(
+        srcDir =  "/src/main/resources",
         src =  { "square" },
-        test = { "spec/square_spec" },
+        testDir =  "/src/test/resources",
+        test = {"spec/square_spec"},
         browser = false
 )
 public class JasmineSquareTest {
