@@ -1,11 +1,9 @@
-import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import javax.script.Invocable;
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
-import javax.script.ScriptException;
-
 import java.io.FileReader;
 
 import static org.hamcrest.Matchers.equalTo;
@@ -28,6 +26,7 @@ public class LoadJSTest {
     }
 
     @Test
+    @Ignore
     public void shouldLoadJasmine() throws Exception {
         engine.eval("var window = {};");//Replace with nashorn-boot.js?
         engine.eval(new FileReader("src/test/javascript/lib/jasmine-2.0.3/jasmine.js"));
