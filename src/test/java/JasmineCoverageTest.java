@@ -5,10 +5,11 @@ import de.helwich.junit.JasmineTest;
 @RunWith(JasmineTestRunner.class)
 @JasmineTest(
         srcDir =  "/src/main/resources",
-        src =  { "square" },
+        src =  { "square", "complicated" },
         testDir =  "/src/test/resources",
-        test = {"spec/square_spec"},
+        test = {"spec/square_spec", "spec/complicated_spec"},
+        coverage = true,
         browser = false
 )
-public class JasmineSquareTest {
+public class JasmineCoverageTest {
 }

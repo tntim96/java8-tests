@@ -35,9 +35,9 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>de.helwich.junit</groupId>
+            <groupId>com.github.tntim96</groupId>
             <artifactId>junit-jasmine-runner</artifactId>
-            <version>0.1.1</version>
+            <version>0.1.2-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
